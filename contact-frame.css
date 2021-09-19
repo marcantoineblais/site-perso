@@ -1,0 +1,161 @@
+:root {
+    --color1: #8fbc8f;
+    --color2: #f4f4f4;
+    --color3: #338533;
+}
+
+body {
+    font-family: arial;
+    line-height: 1.4;
+}
+
+div.frame {
+    margin-top: 30px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    box-shadow: #00000044 0 0 7px 2px;
+    overflow: auto;
+}
+
+div.frame table {
+    text-align: center;
+    padding-left: 15%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: inline-block;
+    width: 100%;
+}
+
+div.frame table td {
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+    max-width: 300px;
+}
+
+div.frame img {
+    background-color: white;
+    max-height: 115px;
+    display: inline-block;   
+}
+
+div.ligne-verticale-frame {
+    border-right: var(--color3) solid 3px;
+    height: 42px;
+    display: inline-block;
+    padding-left: 60px;
+    margin-right: 8px;
+}
+
+p.titre {
+    font-size: 30px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    padding-top: 0 ;
+    font-weight: bold;
+}
+
+table p {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 768px){
+    
+    p {
+        font-size: 14px;
+    }
+
+    p.titre {
+        font-size: 24px;    
+        margin-top: 10px;
+    }
+
+    img {
+        height: 90px;
+    }
+
+    div.frame {
+        height: 200px;
+    }
+    
+    div.frame table {
+        padding-left: 12%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    div.ligne-verticale-frame {
+        padding-left: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 540px){
+    
+    p {
+        font-size: 12px;
+    }
+
+    p.titre {
+        font-size: 22px;    
+        margin-top: 2px;
+    }
+
+    img {
+        height: 75px;
+    }
+
+    div.frame {
+        height: 150px;
+    }
+    
+    div.frame table {
+        padding-left: 2%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    div.ligne-verticale-frame {
+        padding-left: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+    
+    body {
+        min-width: 240px;
+    }
+
+
+    p {
+        font-size: 11px;
+        margin-bottom: 0px;
+    }
+
+    p.titre {
+        font-size: 20px;    
+        margin-top: 2px;
+    }
+
+    img {
+        height: 50px;
+    }
+
+    div.frame {
+        height: 130px;
+    }
+    
+    div.frame table {
+        padding-left: 2%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    div.ligne-verticale-frame {
+        padding-left: 5px;
+    }
+
+}
